@@ -1,0 +1,43 @@
+{
+    "expo": {
+        "name": "MoneyTalk",
+        "slug": "MoneyTalk",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icons/playstore-icon.png",
+        "scheme": "moneytalk",
+        "userInterfaceStyle": "automatic",
+        "newArchEnabled": true,
+
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/icons/playstore-icon.png",
+                "backgroundColor": "#000000"
+            },
+            "predictiveBackGestureEnabled": false,
+            "package": "com.skylad.MoneyTalk",
+            "permissions": [
+                "android.permission.RECORD_AUDIO",
+                "android.permission.READ_EXTERNAL_STORAGE"
+            ],
+            "architectures": ["arm64-v8a"]
+        },
+
+        "splash": {
+            "image": "./assets/images/splash-icon.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+
+        "web": {
+            "output": "static",
+            "favicon": "./assets/icons/playstore-icon.png"
+        },
+
+        "plugins": ["expo-router", "expo-splash-screen", "expo-image-picker"],
+        "experiments": {
+            "typedRoutes": true,
+            "reactCompiler": true
+        }
+    }
+}
